@@ -1,0 +1,11 @@
+{
+  "name": "calc.js",
+  "version": "1.0.0",
+  "description": "A simple calculator application built with Node.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "author": "",
+  "license": "ISC"
+}

@@ -21,4 +21,15 @@ it('correctly calculates the quotient of 10 and 2', () => {
   assert.equal(operations.divide(10, 2), 5);
 })
 
+it('indicates failure when a string is used instead of a number', () => {
+  assert.equal(operations.validateNumbers('sammy', 5), false);
+})
+
+it('indicates failure when two strings are used instead of numbers', () => {
+  assert.equal(operations.validateNumbers('sammy', 'sammy'), false);
+})
+
+it('succesfully runs when two numbers are used', () => {
+  assert.equal(operations.validateNumbers(5, 5), true);
+})
 
